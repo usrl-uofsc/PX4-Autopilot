@@ -724,3 +724,16 @@ PARAM_DEFINE_FLOAT(FW_T_SRATE_P, 0.02f);
  * @group FW TECS
  */
 PARAM_DEFINE_FLOAT(FW_GND_SPD_MIN, 5.0f);
+
+/**
+ * Enable climbout with pitch stick.
+ *
+ * If set to true, the vehicle will enter climbout mode if the altitude setpoint stick is above the 85% climb setpoint.
+ *
+ * @min 0
+ * @max 1
+ * @value 0 No climbout mode with stick
+ * @value 1 Climbout mode with stick enabled
+ * @group FW L1 Control
+ */
+PARAM_DEFINE_INT32(FW_MAN_CLBOUT_EN, 1);

@@ -415,6 +415,8 @@ private:
 		(ParamFloat<px4::params::FW_THR_MIN>) _param_fw_thr_min,
 		(ParamFloat<px4::params::FW_THR_SLEW_MAX>) _param_fw_thr_slew_max,
 
+		(ParamBool<px4::params::FW_MAN_CLBOUT_EN>) _param_fw_man_clbout_en,
+
 		// external parameters
 		(ParamInt<px4::params::FW_ARSP_MODE>) _param_fw_arsp_mode,
 
