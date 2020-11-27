@@ -105,6 +105,8 @@ private:
 
 	int test_wrap_around();
 
+	int test_SubscriptionMulti();
+
 	/* queuing tests */
 	int test_queue();
 	static int pub_test_queue_entry(int argc, char *argv[]);
@@ -143,7 +145,7 @@ int uORBTest::UnitTest::latency_test(orb_id_t T, bool print)
 	int pubsub_task = px4_task_spawn_cmd("uorb_latency",
 					     SCHED_DEFAULT,
 					     SCHED_PRIORITY_MAX,
-					     3000,
+					     2000,
 					     (px4_main_t)&uORBTest::UnitTest::pubsubtest_threadEntry,
 					     args);
 
